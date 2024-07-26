@@ -5,3 +5,4 @@ export { BigSidebar } from "./BigSidebar";
 export { SmallSidebar } from "./SmallSidebar";
 export { NavLinks } from "./NavLinks";
 export { LogoutComponent } from "./LogoutComponent";
+export { ThemeToggle } from "./ThemeToggle";
