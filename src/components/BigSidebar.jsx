@@ -1,11 +1,10 @@
 import Wrapper from "../assets/wrappers/BigSidebar";
 import { useDashboardContext } from "../pages/DashboardLayout";
-import { FaTimes } from "react-icons/fa";
 import { Logo } from "./Logo";
 import { NavLinks } from "./NavLinks";
 
 export const BigSidebar = () => {
-  const { showSidebar, toggleSidebar } = useDashboardContext();
+  const { showSidebar } = useDashboardContext();
   return (
     <Wrapper>
       <div
@@ -15,7 +14,7 @@ export const BigSidebar = () => {
       >
         <div className="content">
           <header>
-            <Logo/>
+            <Logo />
           </header>
           <NavLinks isBigSidebar />
         </div>

@@ -13,7 +13,8 @@ export const NavLinks = ({ isBigSidebar }) => {
             to={path}
             key={text}
             className="nav-link"
-            onClick={isBigSidebar ? "null" : toggleSidebar}
+            //onclick must call a method, it may be a blank method also
+            onClick={isBigSidebar ? () => {} : toggleSidebar}
             end
           >
             <span className="icon">{icon}</span>
